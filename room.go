@@ -4,7 +4,7 @@ import (
     "log"
     "net/http"
     "github.com/gorilla/websocket"
-    "trace"
+    "github.com/srfbogomolov/trace"
 )
 
 type room struct {
@@ -78,5 +78,6 @@ func newRoom() *room {
         join: make(chan *client),
         leave: make(chan *client),
         clients: make(map[*client]bool),
+        tracer: trace.Off(),
     }
 }

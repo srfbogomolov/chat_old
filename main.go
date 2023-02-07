@@ -8,7 +8,7 @@ import (
     "sync"
     "text/template"
     "os"
-    "trace"
+    "github.com/srfbogomolov/trace"
 )
 
 // templateHandler represents a single template
